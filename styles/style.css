@@ -234,7 +234,20 @@ main {
 /* responsive styles */
 
 @media screen and (max-width: 576px) {
-    .skills-container, .about-info-container, .contact{
+    .header{
+        background-image: none;
+    }
+    .banner-text .btn-primary{
+        margin-bottom: 10px;
+    }
+    .banner-text{
+        padding: 10px;
+    }
+    .banner img{
+        /* padding: 10px; */
+        margin: 0 10px;
+    }
+    .banner, .skills-container, .about-info-container, .contact{
         flex-direction: column;
         padding: 10px;
         gap: 10px;
@@ -253,7 +266,7 @@ main {
         padding: 10px;
     }
     .end{
-        padding-bottom: 10px;
+        padding: 10px 0;
     }
 }
 
