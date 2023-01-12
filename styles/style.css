@@ -228,4 +228,52 @@ main {
     color: #757575;
     font-size: 16px;
     text-align: center;
+    padding-bottom: 15px;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 576px) {
+    .skills-container, .about-info-container, .contact{
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+    .resume-content{
+        flex-direction: column;
+        padding: 15px;
+    }
+    .what-i-do .section-description{
+        padding: 10px;
+    }
+    .about, .contact{
+        padding: 10px;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 10px;
+    }
+    .end{
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .about, .contact{
+        padding: 30px;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 20px;
+        margin-right: 20px;
+        border: 2px solid red;
+    }
+    .contact{
+        gap: 30px;
+    }
+    .resume-content{
+        padding: 20px;
+    }
+}
+
+.hide{
+    display: none;
 }
